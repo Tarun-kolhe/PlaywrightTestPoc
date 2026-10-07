@@ -1,0 +1,6 @@
+{
+  "pages": {
+    "home": { "path": "", "titleContains": "DAZN Bet" }
+  },
+  "countryBlockedHeading": "Country blocked"
+}

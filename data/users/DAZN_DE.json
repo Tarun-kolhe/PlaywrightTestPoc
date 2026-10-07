@@ -1,0 +1,8 @@
+{
+  "QA": {
+    "standard": { "username": "REPLACE_ME", "secretKey": "DAZN_DE_QA_STANDARD_PWD" }
+  },
+  "UAT": {
+    "standard": { "username": "REPLACE_ME", "secretKey": "DAZN_DE_UAT_STANDARD_PWD" }
+  }
+}

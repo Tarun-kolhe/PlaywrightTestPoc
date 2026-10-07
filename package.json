@@ -1,0 +1,35 @@
+{
+  "name": "playwright-bdd-framework",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Multi-brand, multi-env, desktop + mobile Playwright BDD framework (local + LambdaTest)",
+  "scripts": {
+    "bddgen": "bddgen",
+    "test": "bddgen && playwright test",
+    "test:smoke": "bddgen && playwright test --grep @smoke",
+    "test:regression": "bddgen && playwright test --grep @regression",
+    "test:desktop": "cross-env DEVICE=desktop npm test",
+    "test:mobile": "cross-env DEVICE=mobile npm test",
+    "test:lt": "cross-env RUN_ON=lambdatest npm test",
+    "test:headed": "bddgen && playwright test --headed",
+    "steps": "bddgen export",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^10.6.0",
+    "@playwright/test": "1.53.2",
+    "@types/node": "^26.6.4",
+    "cross-env": "^10.1.0",
+    "dotenv": "^18.0.5",
+    "eslint": "^10.12.0",
+    "eslint-plugin-playwright": "^2.12.1",
+    "playwright-bdd": "^9.2.1",
+    "prettier": "^3.9.9",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.71.1",
+    "zod": "^4.6.5"
+  }
+}
