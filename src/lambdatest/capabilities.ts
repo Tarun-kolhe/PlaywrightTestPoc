@@ -27,7 +27,7 @@ const REAL_DEVICES: Record<string, CloudTarget> = {
   'mobile-android': {
     kind: 'android',
     deviceName: process.env.LT_ANDROID_DEVICE || 'Galaxy S26 Ultra',
-    platformVersion: process.env.LT_ANDROID_VERSION || '13',
+    platformVersion: process.env.LT_ANDROID_VERSION || '16',
   },
   'mobile-ios': {
     kind: 'ios',

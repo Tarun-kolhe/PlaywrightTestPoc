@@ -1,3 +1,4 @@
+# Author: Tarun Kolhe
 @smoke @critical
 Feature: Site health
   Every DAZN Bet brand and environment loads its home page, title and sportsbook.
